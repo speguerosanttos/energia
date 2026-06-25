@@ -731,17 +731,3 @@ color:#2D6CDF;
     box-sizing:border-box;
 }
 
-.modal input[type="date"],
-.modal input[type="time"]{
-
-    appearance:none;
-    -webkit-appearance:none;
-
-    width:100%;
-    min-width:0;
-    max-width:100%;
-
-    display:block;
-
-    overflow:hidden;
-}

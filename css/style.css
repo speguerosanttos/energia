@@ -719,24 +719,29 @@ color:#2D6CDF;
 
 }
 
-/* Corrección modal móvil */
-.modal input,
-.modal select,
-.modal textarea{
-    width:100% !important;
-    max-width:100% !important;
+
+/*==========================
+   IOS - FECHA Y HORA
+==========================*/
+
+.modal input{
+    width:100%;
+    max-width:100%;
+    min-width:0;
     box-sizing:border-box;
 }
 
-.flatpickr-wrapper{
-    width:100% !important;
-    display:block;
-}
+.modal input[type="date"],
+.modal input[type="time"]{
 
-.flatpickr-wrapper input,
-.flatpickr-input,
-.flatpickr-alt-input{
-    width:100% !important;
-    max-width:100% !important;
+    appearance:none;
+    -webkit-appearance:none;
+
+    width:100%;
+    min-width:0;
+    max-width:100%;
+
     display:block;
+
+    overflow:hidden;
 }

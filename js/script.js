@@ -210,3 +210,19 @@ document.getElementById("formFactura").addEventListener("submit", function () {
     }, 500);
 
 });
+
+flatpickr("#fecha", {
+    locale: "es",
+    dateFormat: "d/m/Y",
+    minDate: "today",
+    disableMobile: true
+});
+
+flatpickr("#hora", {
+    locale: "es",
+    enableTime: true,
+    noCalendar: true,
+    dateFormat: "H:i",
+    time_24hr: true,
+    disableMobile: true
+});
